@@ -1,0 +1,6 @@
+#dzien dobry
+#konfiguracja gry
+
+poziom 1: latwy
+poziom 2: trudny
+

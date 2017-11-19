@@ -8,6 +8,7 @@ public class gui extends JFrame{
 	 */
 	 
 	 JFrame main_menu = new JFrame("menu glowne");
+	 String wczytano = "konfiguracja";
 	 gui(){														//konstruktor
 	 
 	 JButton b_nowa_gra = new JButton("nowa gra");				// tworzenie przyciskow
@@ -28,17 +29,28 @@ public class gui extends JFrame{
         		}  
     		});  
 	 
-	 JTextField tf=new JTextField("puste pole");				//utworzenie i dodanie pola tekstowego
+ 
+	 JTextField tf=new JTextField();							//utworzenie i dodanie pola tekstowego
 	 tf.setBounds(50,160, 210, 100);  
-	 add(tf);
+	 
+	 
+	 	b_wczytaj_plik.addActionListener(new ActionListener(){  	//wypisanie wczytnago pliku do pola tekstowego po wczisnieciu "wczytaj plik"
+		public void actionPerformed(ActionEvent e){  
+            tf.setText(wczytano); 
+        		}  
+    		}); 
 	 
 	 JLabel l_wczytany_plik = new JLabel("wczytany plik:");		//utworzenie i dodanie etykiety "wczytany plik:"
 	 l_wczytany_plik.setBounds(50, 120, 150, 40);
 	 add(l_wczytany_plik);
-	 
+	 add(tf);
 	 setSize(400,500);  										//ustawienia okna
 	 setLayout(null);  
 	 setVisible(true);  
 	 }
+
+	public void zlap_konfiguracje(String konf){
+	wczytano = konf;
+	}
 
 }
