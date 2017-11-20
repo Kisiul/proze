@@ -13,7 +13,17 @@ public class Obsluga_Plikow{
 		}
 		
 		System.out.print(konfiguracja);
-	fr.close();
-
+		fr.close();
 	}
+
+	// void wczytaj_plik_konf(int i)throws Exception{
+
+	// 	FileReader fr = new FileReader("plik_konfiguracyjny.txt"); 
+	// 	int odczyt;
+	// 	while((odczyt = fr.read()) != -1){
+	// 		konfiguracja += (char) odczyt;		
+	// 	}
+	// 	System.out.print(konfiguracja);
+	// 	fr.close();
+	// }
 }

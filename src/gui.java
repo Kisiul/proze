@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.event.*;  
 
-public class gui extends JFrame{
+public class gui extends JFrame implements Skoczek{
 
 	/**
 	 * @param args
@@ -9,8 +9,12 @@ public class gui extends JFrame{
 	 
 	 JFrame main_menu = new JFrame("menu glowne");
 	 String wczytano = "konfiguracja";
-	 gui(){														//konstruktor
-	 
+	 gui(){														//konstruktor	 
+
+	 }
+
+	 public void ekran_startowy(){
+
 	 JButton b_nowa_gra = new JButton("nowa gra");				// tworzenie przyciskow
 	 JButton b_wczytaj_plik = new JButton("wczytaj plik");
 	 JButton b_wyjscie = new JButton("wyjscie");
@@ -51,6 +55,11 @@ public class gui extends JFrame{
 
 	public void zlap_konfiguracje(String konf){
 	wczytano = konf;
+	}
+
+	void wczytaj_plik_konf(int i){
+
+
 	}
 
 }
