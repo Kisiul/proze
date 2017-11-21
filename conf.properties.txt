@@ -1,0 +1,5 @@
+# plik konfiguracyjny
+
+polozenie_x=4 
+polozenie_y=4
+dlugosc=4

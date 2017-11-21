@@ -3,4 +3,8 @@ bin/**
 bin/
 .classpath
 .project
+!*.java
+!*.properties
+!*.txt
+!*.pdf
 
